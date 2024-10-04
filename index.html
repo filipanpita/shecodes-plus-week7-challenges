@@ -9,63 +9,61 @@
       href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="scr/style.css" />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form" id="search-form">
+        <form id="search-form">
           <input
             type="search"
-            placeholder="Enter a city..."
+            placeholder="Enter a city.."
             required
-            id="search-form-input"
-            class="search-form-input"
+            class="search-input"
+            id="search-input"
           />
-          <input type="submit" value="Search" class="search-form-button" />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
-        <div class="weather-app-data">
+        <div class="current-weather">
           <div>
-            <h1 class="weather-app-city" id="city"></h1>
-            <p class="weather-app-details">
-              <span id="time"></span>,
-              <span id="description"></span>
-              <br />
-              Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind-speed"></strong>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
             </p>
           </div>
-          <div class="weather-app-temperature-container">
-            <div id="icon"></div>
-            <div class="weather-app-temperature" id="temperature"></div>
-            <div class="weatehr-app-unit">°C</div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span
+            ><span class="current-temperature-unit">°C</span>
           </div>
         </div>
       </main>
-
       <footer>
-        This project was coded by This project was coded by
-        <a href="https://github.com/filipanpita" target="_blank">Filipa Pita</a>
-        and is on
-        <a
-          href="https://github.com/filipanpita/shecodes-plus-week7-challenges"
-          target="_blank"
-        >
-          GitHub</a
-        >
-        and hosted on
-        <a
-          href="https://vanillaweatherapp-puil.onrender.com"
-          target="_blank"
-        >
-          Render</a
-        >
+        <p>
+          This project was coded by
+          <a href="https://github.com/filipanpita" target="_blank"
+            >Filipa Pita</a
+          >
+          and is on
+          <a
+            href="https://github.com/filipanpita/shecodes-plus-week7-challenges"
+            target="_blank"
+          >
+            GitHub</a
+          >
+          and hosted on
+          <a href="https://vanillaweatherapp-puil.onrender.com" target="_blank">
+            Render</a
+          >
+        </p>
       </footer>
     </div>
-    <script src="src/index.js"></script>
+    <script src="scr/index.js"></script>
   </body>
 </html>
